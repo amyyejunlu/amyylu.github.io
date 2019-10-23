@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Shopping Cart</title>
+  <link rel="shortcut icon" type="image/png" href="/Images/favicon.png">
+  <link rel="stylesheet" href="/cart.css">
+</head>
+<body>
+    <nav class="header" id="myHeader">
+        <div class="nav-left">
+            <a href="index.html"><img class="logo" src="/Images/Logo.png" alt="Cinnabon Logo" width="101px"></a>
+            <li><a class="hover-link" href="shopall.html">Shop All</a></li>
+            <li><a class="hover-link" href="#mixmatch">Mix & Match</a></li>
+        </div>
+        <div class="nav-right">
+            <li><a class="hover-link" href="#account">Account</a></li>
+            <li><a id="cart" href="#cart">My Cart</a></li>     
+        </div>
+        <hr>
+    
+    </nav>
+
+    <div>
+        <h2 class="h2">My Cart</h2>
+    </div>
+
+    <div class="cart-grid">
+        <div class="left-grid">
+            <div class="back-img">
+                    <a href="shopall.html"><img src="/Images/back.png" class="inline" alt="back" width="9px"><div class="sanserif no-link inline">Continue Shopping</div></a>
+            </div>
+            <hr>
+            <div class="left-inner-grid">
+                <img src="/Images/Walnut.jpg" alt="walnut" width="165px">
+                <div>
+                    <p class="">Walnut Cinnabon</p> 
+                    <div id="plusminus">
+                        <img class="inline" id="centerminus"src="/Images/Vector_minus.png" alt="minus" width="15px">
+                        <p class="inline">1</p>  
+                        <img class="inline" src="/Images/vector_plus.png" alt="plus" width="15px">
+                    </div>
+                    <p class=" inline">Glaze: </p><p class="inline">Sugar-Milk</p>
+                </div>
+                <div class="align-right" id="deletebtn">&times;</div>
+            </div>
+        </div>
+
+        <div class="right-grid">
+            <div class="sanserif">Order Summary</div>
+            <hr>
+            <div class="right-inner-grid">
+                <div>
+                    <p>Subtotal:</p>
+                    <p>Shipping:</p>
+                    <p>Total:</p>
+                </div>
+                <div class="align-right">
+                    <p>$6.75</p>
+                    <p>$2.95</p>
+                    <p>$9.70</p>
+                </div>
+            </div>
+            <button id="cartButton" class="button-add-cart">Proceed to Payment</button>
+            <p id="reminder">Add $3.75 more to qualify for free shipping!</p>
+         
+        </div>
+    </div>
+    
+    <div class="section-cards">
+        
+        <h3>You might also like...</h3>
+        <div class="carousel">
+            <div class="card">
+                <img src="/Images/Original.jpg" alt="Original" width="98%">
+                <p>Original</p>
+            </div>    
+            <div class="card card-1">
+                <img src="/Images/Blackberry.png" alt="Blackberry" width="98%">
+                <p>Blackberry</p>
+                </div>  
+            <div class="card card-2">
+                <img src="/Images/Original GF.jpg" alt="Original (Gluten Free)" width="98%">
+                <p>Original (Gluten Free)</p>
+            </div>  
+            <div class="card card-3">
+                    <img src="/Images/PumpkinSpice.jpeg" alt="Pumpkin Spice" width="98%">
+                    <p>Pumpkin Spice</p>
+                </div>  
+
+            <div class = "button-next">
+                <img src="/Images/Vector_next.png" alt="next" width="14px">
+            </div>
+        </div>
+       
+    
+    <footer>  
+        <div class="footer-left">
+            <div class="footer-left-group1">
+                <li><a href="#about" class="bold">About Us</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#careers">Careers</a></li>
+            </div>
+
+            <div class="footer-left-group2">
+                <li><a href="#account"class="bold">Account Information</a></li>
+                <li><a href="#orders">Orders & Returns</a></li>
+                <li><a href="#shipping">Shipping</a></li>
+            </div>
+
+            <div class="footer-right">
+                <img class="logo" src="/Images/Logo.png" alt="Cinnabon Logo" width="101px" id ="center-logo">  
+                <img class="social-media" src="/Images/social media.png" alt="social media" width="140.53px">  
+            </div>
+        </div>
+    </footer>
+   <!-- script>
+   !--     window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script-->
+        <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #FEE9D3;
+    width: 100%;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding-top: 40px;
+}
+nav img {
+    padding-top: 20px;
+    padding-left: 96px;
+}
+nav li a{
+    font-family: "Avenir";
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: black;
+    font-size: 16px;
+    padding-left: 100px;
+}
+
+.hover-link:hover {
+    font-weight: bold;
+}
+.nav-left {
+    float:left;
+}
+
+.nav-left img {
+    vertical-align: top;
+    display: inline-block;
+}
+.nav-right {
+    margin-right: 96px;
+    float:right;
+}
+.nav-right #cart {
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-left: 100px;
+    padding: 12px 23px;
+}
+nav hr {
+    width: 100%;
+    border-bottom: 0.3px solid #CAC9C9;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 102px;
+  }
+.hero-image {
+    background: url(/Images/Home.png);
+    height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /*position: relative;*/
+}
+.hero-text {
+    text-align: left;
+    /* position: absolute; */
+    padding-top: 59px;
+    padding-left: 96px;
+    width: 850px;
+  }
+
+.hero-text p {
+    font-family: Adobe Caslon Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 45px;
+line-height: 141%;
+/* or 63px */
+letter-spacing: 0.135em;
+}
+
+#hero-subtext {
+    width: 700px;
+    font-family: Adobe Caslon Pro;
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+line-height: 141%;
+/* or 56px */
+letter-spacing: 0.135em;
+margin-top: 40px;
+}
+
+.middle { 
+    /* margin-top: 50px; */
+    /* margin-left: 96px; */
+    overflow: hidden;
+}
+.middle p {
+    font-family: 'adobe-caslon-pro', serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.05em;;
+    font-size: 24px;
+    padding-top: 17px;
+    padding-bottom: 132px;
+    margin-left: 96px;
+}
+.middle h2 {
+    padding-top: 50px;
+    margin-top: 50px;
+    margin-left: 96px;
+}
+.middle h2, .section-cards h2 {
+    font-family: Adobe Caslon Pro;
+    font-style: normal;
+    font-size:40px;
+    letter-spacing: 0.05em;
+}
+.middle-left {
+    float: left;
+    display: block;
+}
+.button {
+    text-decoration: none;
+    color: black;
+    font-family: 'avenir', sans-serif;
+    font-style: normal;
+    border: 1px solid #808080;
+    border-radius: 7px;
+    width: 222px;
+    height: 45px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 0px;
+}
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.middle-right {
+    float: right;
+    margin-right: 96px;
+    margin-top: 50px;
+    display: block;
+}
+.middle-right img{
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    border-radius: 7px;
+}
+.section-cards h2 {
+    margin-top: 100px;
+    margin-left: 96px;
+}
+#button-left {
+    float: left;
+    margin-top: 67px;
+    margin-left: 96px;
+}
+#button-right {
+    float: right;
+    margin-right: 96px;
+
+}
+.carousel {
+    display: block;
+    margin-top: 100px;
+    margin-left: 48px;
+    margin-bottom: 113px;
+}
+.card  {
+    display: inline-block;
+    border: 1px solid #808080;
+    border-radius: 7px;
+    width: 341px;
+    height: 234px;
+    margin-left: 48px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 49px;
+}
+.card:hover {
+    background-color: #FEE9D3;
+    border: none;
+    /* box-shadow: none; */
+}
+.card img{
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+}
+.card p {
+    font-family: Adobe Caslon Pro;
+    font-style: normal;
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 0.2rem;
+}
+
+.our-store {
+    font-family: 'adobe-caslon-pro', serif;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-left: 96px;
+    margin-top: 46px;
+}
+.larger-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    letter-spacing: 0.05em;
+    line-height: 146%;
+    width: 535px;
+    margin-left: 144px;
+    margin-top: 50px;
+}
+.our-store p, .address {
+    font-family: Adobe Caslon Pro;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 146%;
+    letter-spacing: 0.05rem;
+}
+.time-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-top: 70px;
+    margin-left: 144px;
+}
+
+.week {
+    width: 126px;
+    text-align: right;
+}
+.week p, .time p {
+    margin-bottom: 26px;
+}
+
+.our-store img {
+    display: inline-block;
+}
+.address-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 434px;
+    margin-left: 144px;
+    margin-top: 70px;
+}
+footer {
+    clear: both;
+    background-color: #FEE9D3;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    margin-top: 100px;
+}
+.bold {
+    font-weight: bold;
+}
+
+.footer-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    grid-column-start: 1fr;
+    margin-left: 96px;
+}
+
+.footer-right {
+    margin-left:600px;
+}
+.footer-right img{
+    display: block;
+}
+#center-logo {
+    padding-left: 15px;
+}
+footer li, li a{
+    list-style: none;
+    color: black;
+    text-decoration: none;
+    font-family: 'avenir', sans serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 2rem;
+}
+

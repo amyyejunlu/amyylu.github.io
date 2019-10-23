@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cinnabon</title>
+  <link rel="shortcut icon" type="image/png" href="/Images/favicon.png">
+    <link rel="stylesheet" href="/shopall.css">
+</head>
+<body>
+    <nav class="header" id="myHeader">
+        <div class="nav-left">
+            <a href="index.html"><img class="logo" src="/Images/Logo.png" alt="Cinnabon Logo" width="101px"></a> 
+            <li><a class="hover-link" id="shopall" href="shopall.html">Shop All</a></li>
+            <li><a class="hover-link" href="#mixmatch">Mix & Match</a></li>
+        </div>
+        <div class="nav-right">
+            <li><a class="hover-link" href="#account">Account</a></li>
+            <li><a id="cart" href="/cart.html">My Cart</a></li>     
+        </div>
+        <hr>
+    
+    </nav>
+
+    <div class="breadcrumb"> 
+        <a href="index.html"><p>home &nbsp</p></a><p class="bold">/</p><a href="shopall.html"><p>&nbsp shop all</p></a>
+    </div>
+    <div class="section-cards">
+        <div>
+            <h2>Signature flavors:</h2>
+        </div>
+        
+        <div class="carousel">
+            <div class="card">
+                <img src="/Images/Original.jpg" alt="Original" width="98%">
+                <p>Original</p>
+            </div>    
+            <div class="card">
+                <img src="/Images/Blackberry.png" alt="Blackberry" width="98%">
+                <p>Blackberry</p>
+                </div>  
+            <div class="card">
+                <img src="/Images/Original GF.jpg" alt="Original (Gluten Free)" width="98%">
+                <p>Original (Gluten Free)</p>
+            </div>  
+            <div class="card card-bottom">
+                <img src="/Images/Caramel Pecan Card.jpg" alt="Caramel Pecan" width="98%">
+                <p>Caramel Pecan</p>
+            </div>  
+            <div class="card card-bottom">
+                <a href="walnut.html"><img src="/Images/Walnut.jpg" alt="Walnut" width="98%"></a>
+                <a href= "walnut.html" id="link"><p>Walnut</p></a>
+            </div>  
+            <div class="card card-bottom">
+                <img src="/Images/PumpkinSpice.jpeg" alt="Pumpkin Spice" width="98%">
+                <p>Pumpkin Spice</p>
+            </div>  
+        </div>
+       
+    
+    <footer>  
+        <div class="footer-left">
+            <div class="footer-left-group1">
+                <li><a href="#about" class="bold">About Us</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#careers">Careers</a></li>
+            </div>
+
+            <div class="footer-left-group2">
+                <li><a href="#account"class="bold">Account Information</a></li>
+                <li><a href="#orders">Orders & Returns</a></li>
+                <li><a href="#shipping">Shipping</a></li>
+            </div>
+
+            <div class="footer-right">
+                <img class="logo" src="/Images/Logo.png" alt="Cinnabon Logo" width="101px" id ="center-logo">  
+                <img class="social-media" src="/Images/social media.png" alt="social media" width="140.53px">  
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+</html>

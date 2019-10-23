@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cinnabon</title>
+  <link rel="shortcut icon" type="image/png" href="/Images/favicon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="header" id="myHeader">
+        <div class="nav-left">
+            <a href="index.html"><img class="logo" src="/Images/Logo.png" alt="Cinnabon Logo" width="101px"></a> 
+            <li><a class="hover-link" href="shopall.html">Shop All</a></li>
+            <li><a class="hover-link" href="#mixmatch">Mix & Match</a></li>
+        </div>
+        <div class="nav-right">
+            <li><a class="hover-link" href="#account">Account</a></li>
+            <li><a id="cart" href="cart.html">My Cart</a></li>     
+        </div>
+        <hr>
+    </nav>
+
+    <div class= "hero-image">
+        <div class="hero-text">
+            <p>cinnabon.</p>
+            <p id="hero-subtext">Choose from our original cinnamon rolls to a variety of artisan flavors.</p>
+        </div>
+        <a class="button" id ="button-left" href="shopall.html">Shop Now</a>
+    </div>
+
+
+    <div class ="middle">
+        <div class="middle-left">
+            <h2>New walnut flavor:</h2>
+            <p>available in 4 different glazes</p>
+            <a class="button" id= "button-left" href="walnut.html">Shop Now</a>
+        </div>
+        
+        <div class="middle-right">
+            <img src="/Images/Walnut.jpg" alt="Cinnabon Logo" width="700px">   
+        </div>
+    </div>
+    
+
+    <div class="section-cards">
+        <div>
+            <h2>Signature flavors:</h2>
+        </div>
+
+        <a class="button" id="button-right" href="shopall.html">Shop All</a>
+        
+        <div class="carousel">
+            <div class="card">
+                <img src="/Images/Original.jpg" alt="Original" width="98%">
+                <p>Original</p>
+            </div>    
+            <div class="card">
+                <img src="/Images/Blackberry.png" alt="Blackberry" width="98%">
+                <p>Blackberry</p>
+                </div>  
+            <div class="card">
+                <img src="/Images/Original GF.jpg" alt="Original (Gluten Free)" width="98%">
+                <p>Original (Gluten Free)</p>
+            </div>  
+        </div>
+    
+        <div> <h2>Our store:</h2></div>
+       
+        <div class="our-store">
+            <div>
+                <img src="/Images/Store.png" alt="Our Store" width="450px">
+            </div>
+
+            <div>
+                <p class="larger-text">Our shop is located in Pittsburgh, PA, and we ship fresh rolls anywhere in the Pittsburgh area.</p>
+                <div class="time-grid">
+                    <div class="week">
+                        <p class="bold">Mon-Fri:</p>
+                        <p class="bold">Sat:</p>
+                        <p class="bold">Sun:</p>  
+                    </div>
+                    
+                    <div class="time">
+                        <p>8 am - 7 pm</p>
+                        <p>9 am - 7 pm</p>
+                        <p>9 am - 6 pm</p>  
+                    </div>
+                </div>  
+
+                <div class="address-grid">
+                    <div>
+                        <img src="/Images/pin@2x.png" alt="Pin" width="41px"> 
+                    </div>
+
+                    <div class="address">5000 Forbes Ave, Pittsburgh, PA 15213</div>
+                </div>
+        </div>
+    </div>
+    
+    <footer>  
+        <div class="footer-left">
+            <div class="footer-left-group1">
+                <li><a href="#about" class="bold">About Us</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#careers">Careers</a></li>
+            </div>
+
+            <div class="footer-left-group2">
+                <li><a href="#account"class="bold">Account Information</a></li>
+                <li><a href="#orders">Orders & Returns</a></li>
+                <li><a href="#shipping">Shipping</a></li>
+            </div>
+
+            <div class="footer-right">
+                <img class="logo" src="/Images/Logo.png" alt="Cinnabon Logo" width="101px" id ="center-logo">  
+                <img class="social-media" src="/Images/social media.png" alt="social media" width="140.53px">  
+            </div>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+</body>
+</html>
