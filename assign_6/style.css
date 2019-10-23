@@ -62,7 +62,7 @@ nav hr {
     padding-top: 102px;
   }
 .hero-image {
-    background: url(/Images/Home.png);
+    background: url(Images/Home.png);
     height: 600px;
   background-position: center;
   background-repeat: no-repeat;
