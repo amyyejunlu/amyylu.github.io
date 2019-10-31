@@ -50,21 +50,22 @@
             </div>
             <p class="bold glaze">4 glazes available:</p>
             <div class="glaze-grid" id="glazeGrid">
-                <div>
-                    <img id = "clickBorderOne" src="Images/None.png" alt="no glaze" width="54px">
+                <div class = "flavor">
+                    <img id = "clickBorderOne" value="Plain" src="Images/None.png" alt="Plain" width="54px" onclick ="makeclickable()" >
                     <p>None</p>
                 </div>
-                <div>
-                    <img id = "clickBorderTwo" src="Images/Sugar-milk.png" alt="sugar-milk" width="54px">
+                <div class = "flavor">
+                    <img id = "clickBorderTwo"  src="Images/Sugar-milk.png" alt="Sugar-milk" width="54px" onclick ="makeclickable()">
                     <p>Sugar-Milk</p> 
                 </div>
-                <div>
-                    <img id = "clickBorderThree" src="Images/Vanilla-Milk.png" alt="Vanilla-Milk" width="54px">
+                <div class = "flavor">
+                    <img id = "clickBorderThree" value="Vanilla-Milk" src="Images/Vanilla-Milk.png" alt="Vanilla-Milk" width="54px" onclick ="makeclickable()">
                     <p>Vanilla-Milk</p> 
                 </div>
-                <div>
-                    <img id = "clickBorderFour" src="Images/Double-Chocolate.png" alt="Double-Chocolate" width="54px">
+                <div class = "flavor">
+                    <img id = "clickBorderFour" value="Double-Chocolate" src="Images/Double-Chocolate.png" alt="Double-Chocolate" width="54px" onclick ="makeclickable()">
                     <p>Double-Chocolate</p> 
+
                 </div>
             </div>
             <div class="button-grid">
@@ -96,15 +97,15 @@
             <div>
                 <p class="bold">Walnut</p>
                 <div class="inline">
-                    <p class="bold inLine">Qty:</p> <p>1</p>
+                    <p class="bold inLine qty">Qty:</p> <p>1</p>
                 </div>
                 <div class="inline">
-                    <p class="bold inLine">Glaze:</p><p>&nbsp;Sugar-Milk</p> 
+                    <p class="bold inLine">Glaze:</p><p class="glaze" id="modalGlaze">&nbsp;Sugar-Milk</p> 
                 </div>
             </div>
             <div class="popRow">
                 <p id="cancel">&times;</p>
-                <p>$6.75</p>
+                <p class="total">$6.75</p>
             </div>
         </div>
         <hr id="popHr">
