@@ -9,11 +9,13 @@ thumbnail.forEach(img => img.addEventListener('click', imgClick));
 
 // var thumbOne = document.getElementById("thumbnailOne");
 // var thumbTwo = document.getElementById("thumbnailTwo");
+
 var largeOne = document.getElementById("current");
 // var largeTwo = document.getElementById("current");
 
 // define  a js dict
 // key "/Images/walnut_thumbnail_1.png" --> value "/Images/Walnut.jpg"
+
 function imgClick(){
     console.log(this.id)
     var thisthumb = document.getElementById(this.id);

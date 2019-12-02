@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.modal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 70px;
+}
+#modalHeading {
+    font-family: 'Orator Std', sans-serif;
+    font-size: 28px;
+    color: black;
+    background-color: #757373;
+    width: 542px;
+    height: 105px;
+    line-height: 100px;
+    text-align: center;
+    /* vertical-align: middle; */
+}
+.instruction {
+    color: #BCB7B7;
+    font-family: 'Orator Std', sans-serif;
+    font-size: 20px;
+    background-color: #2C2C2C; 
+    width: 542px;
+    height: 550px;
+}
+.triangle {
+    width: 10px;
+    margin: auto;
+}
+.imgbutton1, .imgbutton2 {
+    border:1px solid #757373;
+    padding: 40px;
+}
+
+.imgbutton1:hover {
+    background-color: #018786;
+    cursor: pointer;
+    border:1px solid #018786;
+}
+
+.imgbutton2:hover {
+    background-color: #7F47C2;
+    cursor: pointer;
+    border:1px solid #7F47C2;
+}
+.choose {
+    text-align: left; 
+    margin-left: 75px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+.choosegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 75px;
+}
+.centeror {
+    padding-left: 25px;
+    padding-top: 50px;
+}
+.startbutton {
+    color:white;
+    font-family: 'Orator Std', sans-serif;
+    font-size: 28px;
+    border:1px solid #757373;
+    text-align: center;
+    /* vertical-align: middle; */
+    width:390px;
+    height: 120px;
+    line-height: 60px;
+    margin-left: 75px; 
+    margin-top: 75px; 
+}
+
+.maintext {
+    color: white;
+    font-family: 'Orator Std', sans-serif;
+    font-size: 24px;
+    display: block;
+}
+
+.secondtext {
+    color: white;
+    font-family: 'Orator Std', sans-serif;
+    font-size: 14px;
+    display: inline;
+}
+.board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.topimage {
+    background-color:#018786;
+    width: 400px;
+    height: 178px;
+}
+.topimageme, .bottomimageme{
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+}
+
+.bottomimage {
+    background-color:#8B51D2;
+    width: 400px;
+    height: 178px;
+}
+
+.toegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #2C2C2C;
+    width: 400px;
+    height: 400px;
+}
+.detailtoegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
+    margin-top: 45px;
+}
+.box {
+    border:1px solid #757373;
+    width: 83px;
+    height:83px;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+.box:hover {
+    background-color: #1E1E1E;
+    cursor: pointer;
+    border:1px solid #1E1E1E;
+    opacity: 1;
+}
