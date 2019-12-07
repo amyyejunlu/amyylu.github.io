@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+    <!-- <body onload="startGame();"> -->
+  <body>
+    <div class="modal active" id="modalpop">   
+        <div></div> 
+        <div>
+            <div id="modalHeading">Tic Tac Toe</div>  
+            <div class="instruction">
+                <!-- <p class="choose">choose</p> -->
+                <div class="choose">choose</div>    
+                <div class="choosegrid">
+                       
+                        <div onclick="choosebkgdX(this)" >
+                            <img id="chooseX" class="imgbutton1" src="images/x.png" width="76px">
+                        </div>
+                        <div>
+                            <p class="centeror">or</p>
+                        </div>
+                        <div onclick="choosebkgdO(this)" >
+                            <img id="chooseO" class="imgbutton2" src="images/o.png" width="76px" >
+                        </div>
+                        <div></div>
+                </div>
+                <div class="startbutton" id="startbutton">
+                    <p>start the game</p>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>  
+                
+    
+       
+    <img class="triangle" src="images/triangle left.png">
+
+    <div class="board">
+        <div>
+        </div>
+        <div>
+            <div class="topimage">
+                <div class="topimageme">
+                    <img src="images/x.png" width= 67px;>
+                    <p class="maintext">Me</p>
+                </div>
+            </div>
+         
+
+            <div class="toegrid">
+                <div>
+                </div>
+                <div class="detailtoegrid">
+                    <div>
+                        <div class="box" id= "s1" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s1" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s1" onclick="nextMove(this)"></div>
+                    </div>
+                    <div>
+                        <div class="box" id= "s1" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s1" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s1" onclick="nextMove(this)"></div>
+                    </div>
+                    <div>
+                        <div class="box" id= "s1" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s1" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s1" onclick="nextMove(this)"></div>
+                    </div> 
+                </div>        
+                <div>
+                </div>   
+            </div>
+                
+            <div class="bottomimage">
+                <div class="bottomimageme">
+                     <img src="images/o.png" width= 67px;>
+                    <p class="maintext">Computer</p>
+                </div>   
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+<script src="app.js" type="text/javascript"></script>
+</body>
+</html>

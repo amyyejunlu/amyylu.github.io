@@ -6,44 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tic Tac Toe</title>
   <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
-<!-- <body onload="startGame()";> -->
-    <body>
-  
-    <div onload="popup()" class="modal active" id="modalpop">   
-        <div></div> 
-        <div>
-            <div id="modalHeading">Tic Tac Toe</div>  
-            <div class="instruction">
-                <!-- <p class="choose">choose</p> -->
-                <div class="choose">choose</div>    
-                <div class="choosegrid">
-                       
-                        <div>
-                            <img id="chooseX" class="imgbutton1" src="images/x.png" width="76px">
-                        </div>
-                        <div>
-                            <p class="centeror">or</p>
-                        </div>
-                        <div>
-                            <img id="chooseO" class="imgbutton2" src="images/o.png" width="76px" >
-                        </div>
-                        <div></div>
-                    </div>
-                    <div class="startbutton" id="startbutton">
-                        <p>start the game</p>
-                    </div>
-            </div>
-        </div>
-        <div></div>
-    </div>  
-                
-    
-       
-    <img class="triangle" src="images/triangle left.png">
 
+    <!-- <body onload="startGame();"> -->
+  <body>
+       
+    <!-- <img class="triangle" src="images/triangle left.png"> -->
+ 
+    <!-- <a href="javascript: clearBox();" id="reset" class="reset">Reset</a> -->
     <div class="board">
         <div>
+                <a href="javascript: clearBox();" id="reset" class="reset">Reset</a>
         </div>
         <div>
             <div class="topimage">
@@ -53,25 +28,33 @@
                 </div>
             </div>
          
-
             <div class="toegrid">
                 <div>
                 </div>
                 <div class="detailtoegrid">
                     <div>
-                        <div class="box" onclick="nextMove(this)"></div>
-                        <div class="box" onclick="nextMove(this)"></div>
-                        <div class="box" onclick="nextMove(this)"></div>
+                        <!-- <div class="box" id= "s1" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s2" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s3" onclick="nextMove(this)"></div> -->
+                        <div class="box" id="s1"></div>
+                        <div class="box" id="s2"></div>
+                        <div class="box" id="s3"></div>
                     </div>
                     <div>
-                        <div class="box" onclick="nextMove(this)"></div>
-                        <div class="box" onclick="nextMove(this)"></div>
-                        <div class="box" onclick="nextMove(this)"></div>
+                        <!-- <div class="box" id= "s4" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s5" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s6" onclick="nextMove(this)"></div> -->
+                        <div class="box" id="s4"></div>
+                        <div class="box" id="s5"></div>
+                        <div class="box" id="s6"></div>
                     </div>
                     <div>
-                        <div class="box" onclick="nextMove(this)"></div>
-                        <div class="box" onclick="nextMove(this)"></div>
-                        <div class="box" onclick="nextMove(this)"></div>
+                        <!-- <div class="box" id= "s7" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s8" onclick="nextMove(this)"></div>
+                        <div class="box" id= "s9" onclick="nextMove(this)"></div> -->
+                        <div class="box" id="s7"></div>
+                        <div class="box" id="s8"></div>
+                        <div class="box" id="s9"></div>
                     </div> 
                 </div>        
                 <div>
@@ -88,6 +71,40 @@
         <div>
         </div>
     </div>
-<script src="app.js"></script>
+
+    <div class="modal active" id="modalpop">   
+        <div></div> 
+        <div class="grayBkgd">
+            <div class="middleModal animated fadeInDown faster">
+                <div class='reveal'>
+
+                    <div id="modalHeading">Tic Tac Toe</div>  
+                    <div class="instruction">
+                        <!-- <p class="choose">choose</p> -->
+                        <div class="choose">choose</div>    
+                        <div class="choosegrid">
+                            
+                                <div onclick="choosebkgdX(this)" >
+                                    <img id="chooseX" class="imgbutton1" src="images/x.png" width="76px">
+                                </div>
+                                <div>
+                                    <p class="centeror">or</p>
+                                </div>
+                                <div onclick="choosebkgdO(this)" >
+                                    <img id="chooseO" class="imgbutton2" src="images/o.png" width="76px" >
+                                </div>
+                                <div></div>
+                        </div>
+                        <div class="startbutton" id="startbutton">
+                            <p>start the game</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>  
+<!-- <a href="javascript: clearBox();" id="reset">Reset</a> -->
+<script src="app.js" type="text/javascript"></script>
 </body>
 </html>

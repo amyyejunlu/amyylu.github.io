@@ -3,41 +3,11 @@ body {
     padding: 0;
     background-color: black;
 }
-
-.grayBkgd {
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+.modal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 70px;
 }
-
-.middleModal {
-    position: fixed;
-    left: 50%;
-    top: 8%;
-    /* position: fixed; /*stay in place*/
-  /* z-index: 1; Sit on top */
-  /* padding-top: 2%; Location of the box */
-  /* text-align: center; */ 
-   /* left: 30%;  */
-  /* top: 0;  */
-  /* animation-duration: 0.1s; */
-  /* position: absolute; */
-
-  /* margin-top: 70px; */
-
-}
-.middleModal .reveal {
-    position: relative;
-    left:-50%;
-}
-
 #modalHeading {
     font-family: 'Orator Std', sans-serif;
     font-size: 28px;
@@ -47,6 +17,7 @@ body {
     height: 105px;
     line-height: 100px;
     text-align: center;
+    /* vertical-align: middle; */
 }
 .instruction {
     color: #BCB7B7;
@@ -108,20 +79,6 @@ body {
 .startbutton:hover {
     background-color:black;
 }
-
-/* #reset {
-    color: #757373;
-    font-family: 'Orator Std', sans-serif;
-    font-size: 24px;
-    border: 1px solid #757373;
-    padding: 20px 70px; 
-    text-decoration: none;
-} */
-
-/* #reset:hover {
-    color: white;
-    border: 1px solid white;
-} */
 .maintext {
     color: white;
     font-family: 'Orator Std', sans-serif;
@@ -138,24 +95,6 @@ body {
 .board {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-
-.reset {
-    color: #757373;
-    font-family: 'Orator Std', sans-serif;
-    font-size: 24px;
-    border: 1px solid #757373;
-    padding: 20px 70px; 
-    /* max-width: 227px; */
-    margin: 2px;
-    line-height: 75px;
-    text-align:center;
-    text-decoration: none;
-}
-
-.reset:hover{
-    color: white;
-    border: 1px solid white;
 }
 .topimage {
     background-color:#018786;
